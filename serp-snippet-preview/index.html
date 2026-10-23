@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SERP Snippet Preview: Title Tag and Meta Description Pixel Checker</title>
+<meta name="description" content="Free tool: preview how a Google result could show your title tag and meta description on desktop and mobile, measured in pixels.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <header class="head">
+    <p class="kicker">SEO tool · Billion Web Studio</p>
+    <h1>SERP snippet preview</h1>
+    <p class="lede">Type a page title and meta description to see roughly how Google could show them, and how close each one is to being cut off. Google measures in pixels, not characters, so a title full of wide letters breaks sooner.</p>
+  </header>
+
+  <section class="grid">
+    <form class="panel" id="form" autocomplete="off">
+      <label for="url">Page URL</label>
+      <input id="url" type="url" value="https://billionwebstudio.com/glossary/meta-title">
+
+      <label for="title">Title tag</label>
+      <input id="title" type="text" value="Meta Title: What It Is and How to Write One | Billion Web Studio">
+      <div class="meter" id="titleMeter" aria-live="polite"><span class="bar"><i></i></span><b></b></div>
+
+      <label for="desc">Meta description</label>
+      <textarea id="desc" rows="4">A meta title is the clickable headline Google shows for your page. Learn how long it should be, where to put the keyword and how to stop Google rewriting it.</textarea>
+      <div class="meter" id="descMeter" aria-live="polite"><span class="bar"><i></i></span><b></b></div>
+
+      <fieldset class="device">
+        <legend>Preview on</legend>
+        <label><input type="radio" name="device" value="desktop" checked> Desktop</label>
+        <label><input type="radio" name="device" value="mobile"> Mobile</label>
+      </fieldset>
+    </form>
+
+    <div class="panel preview-wrap">
+      <p class="label">Preview</p>
+      <article class="serp" id="serp">
+        <div class="site">
+          <span class="fav" aria-hidden="true">b</span>
+          <span class="who"><strong id="siteName"></strong><small id="crumb"></small></span>
+        </div>
+        <h2 class="t" id="pTitle"></h2>
+        <p class="d" id="pDesc"></p>
+      </article>
+      <ul class="tips" id="tips"></ul>
+      <p class="note">Widths are a guide, not a rule. Google does not publish a fixed limit and rewrites many titles, so write the important words first.</p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    Built by <a href="https://billionwebstudio.com" target="_blank" rel="noopener">Billion Web Studio</a>, a website development company for businesses in the USA, UK, UAE and beyond. More: <a href="https://billionwebstudio.com/glossary/meta-title" target="_blank" rel="noopener">what a meta title is</a>.
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

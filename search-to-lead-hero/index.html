@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search to Enquiry Hero Animation for a Website Development Company</title>
+<meta name="description" content="A pure HTML, CSS and JS hero animation: a buyer searches, finds the business, opens the site and sends an enquiry.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+  <section class="copy">
+    <p class="kicker">Website development company · hero concept</p>
+    <h1>From a search to a <em>new enquiry</em>, in one loop.</h1>
+    <p class="lede">A hero animation for a website development company: a buyer searches, finds the business, opens the site and sends an enquiry. The city in the search changes each loop, because the same journey happens in New York, London, Dubai, Toronto, Sydney and Chennai.</p>
+    <ul class="facts">
+      <li><b>Pure HTML, CSS and JS.</b> No libraries.</li>
+      <li><b>Respects reduced motion.</b> It shows the final frame instead.</li>
+      <li><b>One timeline.</b> Every step is a class on the stage.</li>
+    </ul>
+    <button class="replay" type="button" id="replay">Replay</button>
+  </section>
+
+  <section class="device" aria-label="Animated example: search result to enquiry">
+    <div class="bar"><i></i><i></i><i></i><span id="addr">google.com</span></div>
+    <div class="screen">
+      <div class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="M15 15l5 5"/></svg>
+        <span id="query"></span><span class="caret"></span>
+      </div>
+
+      <ol class="results">
+        <li class="ad"><span class="ln"></span><span class="ln s"></span></li>
+        <li class="hit">
+          <p class="u">billionwebstudio.com</p>
+          <p class="h">Website Development Company | Billion Web Studio</p>
+          <p class="sn">Fast, SEO ready websites that turn visits into calls, forms and WhatsApp enquiries.</p>
+        </li>
+        <li><span class="ln"></span><span class="ln s"></span></li>
+        <li><span class="ln"></span><span class="ln s"></span></li>
+      </ol>
+
+      <div class="site">
+        <div class="nav"><b>b</b><span></span><span></span><span></span><em>Get a quote</em></div>
+        <h2>Websites that bring in leads.</h2>
+        <form class="mini" onsubmit="return false">
+          <label>Name<span class="f" data-v="Sarah Ahmed"></span></label>
+          <label>Need<span class="f" data-v="New website + SEO"></span></label>
+          <span class="send">Send enquiry</span>
+        </form>
+      </div>
+
+      <div class="cursor" aria-hidden="true"></div>
+      <div class="toast" role="status"><b>New enquiry</b><span id="toastCity">From Dubai · just now</span></div>
+    </div>
+  </section>
+
+  <footer class="foot">Concept by <a href="https://billionwebstudio.com" target="_blank" rel="noopener">Billion Web Studio</a>, a website development company building for businesses in the USA, UK, UAE, Canada, Australia and India. See the <a href="https://billionwebstudio.com/case-studies" target="_blank" rel="noopener">case studies</a>.</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

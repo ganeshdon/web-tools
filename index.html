@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Website Tools for SEO and Performance | Billion Web Studio</title>
+<meta name="description" content="Free, open-source website tools: a SERP snippet preview with pixel widths, Core Web Vitals gauges with Google's thresholds, and a search-to-enquiry hero animation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f9f9f7;--ink:#121316;--muted:#5b5f68;--line:#dcdcd6;--blue:#0559fd}
+*{box-sizing:border-box}
+body{margin:0;font-family:Geist,system-ui,sans-serif;color:var(--ink);background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/40px 40px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/40px 40px,var(--paper)}
+main{max-width:1040px;margin:0 auto;padding:56px 20px}
+.kicker{font:500 12px "Geist Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin:0}
+h1{font-size:clamp(34px,5vw,56px);letter-spacing:-.03em;line-height:1.04;margin:10px 0 14px}
+.lede{max-width:680px;color:var(--muted);line-height:1.6;font-size:18px;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+@media (max-width:860px){.grid{grid-template-columns:minmax(0,1fr)}}
+.card{display:flex;flex-direction:column;background:#fff;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:22px;color:inherit;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.card:hover,.card:focus-visible{transform:translate(-2px,-2px);box-shadow:10px 10px 0 var(--blue);outline:none}
+.card h2{font-size:21px;margin:8px 0 8px;letter-spacing:-.01em}
+.card p{color:var(--muted);line-height:1.55;margin:0 0 14px;font-size:15px}
+.card span{margin-top:auto;font-weight:600;color:var(--blue)}
+.tag{font:500 11px "Geist Mono",monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+section.about{margin-top:56px;max-width:760px;line-height:1.65}
+section.about h2{font-size:26px;letter-spacing:-.02em}
+section.about a,footer a{color:var(--blue);font-weight:600}
+footer{margin-top:48px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">Open source · Billion Web Studio</p>
+  <h1>Free website tools for SEO and performance</h1>
+  <p class="lede">Small, dependency-free tools we use when we build and audit websites. Each one runs in your browser, nothing is sent anywhere, and the code is MIT licensed.</p>
+
+  <div class="grid">
+    <a class="card" href="serp-snippet-preview/">
+      <span class="tag">SEO</span>
+      <h2>SERP snippet preview</h2>
+      <p>See how a Google result could show your title tag and meta description on desktop and mobile, measured in pixels, with plain fixes.</p>
+      <span>Open the tool →</span>
+    </a>
+    <a class="card" href="core-web-vitals-gauges/">
+      <span class="tag">Performance</span>
+      <h2>Core Web Vitals gauges</h2>
+      <p>Drag LCP, INP and CLS against Google's published thresholds and see what to fix for each band.</p>
+      <span>Open the tool →</span>
+    </a>
+    <a class="card" href="search-to-lead-hero/">
+      <span class="tag">Design</span>
+      <h2>Search to enquiry hero</h2>
+      <p>A hero animation in pure HTML, CSS and JavaScript that follows a buyer from a search to a sent enquiry. Respects reduced motion.</p>
+      <span>Open the demo →</span>
+    </a>
+  </div>
+
+  <section class="about">
+    <h2>Who made these</h2>
+    <p><a href="https://billionwebstudio.com/">Billion Web Studio</a> is a website development company that builds fast, SEO ready websites for service businesses, clinics, law firms, manufacturers and B2B companies in the USA, the UK, the UAE, Canada, Australia and India. Every site ships with technical SEO, schema markup, <a href="https://billionwebstudio.com/glossary/core-web-vitals">Core Web Vitals</a> targets and lead tracking.</p>
+    <p>See the results on real projects in our <a href="https://billionwebstudio.com/case-studies">website development case studies</a>, or read how to write a <a href="https://billionwebstudio.com/glossary/meta-title">meta title that Google shows in full</a>.</p>
+  </section>
+
+  <footer>
+    Source code: <a href="https://github.com/ganeshdon/web-tools">github.com/ganeshdon/web-tools</a> · Built by <a href="https://billionwebstudio.com/">Billion Web Studio</a>
+  </footer>
+</main>
+</body>
+</html>

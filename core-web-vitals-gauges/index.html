@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Core Web Vitals Gauges: LCP, INP and CLS Thresholds</title>
+<meta name="description" content="Interactive gauges for Google Core Web Vitals (LCP, INP, CLS) using the official web.dev thresholds, with what to fix for each band.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <header class="head">
+    <p class="kicker">Performance · Billion Web Studio</p>
+    <h1>Core Web Vitals, explained with gauges</h1>
+    <p class="lede">Drag the sliders to see where a page lands on each metric. The bands use Google's published thresholds, and a page passes only when all three are good at the 75th percentile of real visits.</p>
+  </header>
+
+  <section class="verdict" id="verdict" aria-live="polite"></section>
+
+  <section class="cards">
+    <article class="card" data-metric="lcp">
+      <header><h2>LCP</h2><p>Largest Contentful Paint · how fast the main content appears</p></header>
+      <svg class="gauge" viewBox="0 0 200 120" aria-hidden="true"></svg>
+      <output class="value"></output>
+      <label class="sr" for="lcp">LCP in seconds</label>
+      <input id="lcp" type="range" min="0.5" max="8" step="0.1" value="2.1">
+      <p class="scale"><span>Good ≤ 2.5 s</span><span>Poor &gt; 4 s</span></p>
+      <p class="fix"></p>
+    </article>
+
+    <article class="card" data-metric="inp">
+      <header><h2>INP</h2><p>Interaction to Next Paint · how fast the page reacts to taps and clicks</p></header>
+      <svg class="gauge" viewBox="0 0 200 120" aria-hidden="true"></svg>
+      <output class="value"></output>
+      <label class="sr" for="inp">INP in milliseconds</label>
+      <input id="inp" type="range" min="50" max="900" step="10" value="320">
+      <p class="scale"><span>Good ≤ 200 ms</span><span>Poor &gt; 500 ms</span></p>
+      <p class="fix"></p>
+    </article>
+
+    <article class="card" data-metric="cls">
+      <header><h2>CLS</h2><p>Cumulative Layout Shift · how much the layout jumps while loading</p></header>
+      <svg class="gauge" viewBox="0 0 200 120" aria-hidden="true"></svg>
+      <output class="value"></output>
+      <label class="sr" for="cls">CLS score</label>
+      <input id="cls" type="range" min="0" max="0.5" step="0.01" value="0.04">
+      <p class="scale"><span>Good ≤ 0.1</span><span>Poor &gt; 0.25</span></p>
+      <p class="fix"></p>
+    </article>
+  </section>
+
+  <footer class="foot">
+    Thresholds from <a href="https://web.dev/articles/vitals" target="_blank" rel="noopener">web.dev's Web Vitals guide</a>. Built by <a href="https://billionwebstudio.com" target="_blank" rel="noopener">Billion Web Studio</a>, a website development company. Read more about <a href="https://billionwebstudio.com/glossary/core-web-vitals" target="_blank" rel="noopener">Core Web Vitals</a>.
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
